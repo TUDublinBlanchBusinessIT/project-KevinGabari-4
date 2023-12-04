@@ -1,6 +1,6 @@
 <HTML>
 	<Body style="background-color:powderblue;">
-		<Form action ="processEmployee.php" method= "Post">
+		<Form action ="processEmployee.php" method= "POST">
 <title>Chelsea Football club</title>
 <h1>Please enter your information</h1>
 <table>
@@ -8,9 +8,12 @@
 
 			Surname: <input type="text" name="sname"><br>
 	
-			Date of Birth:<input type="text" name="dob"><br>
+			Date of Birth:<input type="date" name="dob"><br>
+			<div class= "slidecontainer">
 			
-			Salary:<input type="text" name="salary"><br>
+			<input type="range" min="1" max="1000000" value ="350000" class ="slider" name="salary"><br>
+			
+			
 			<input type="submit">
 </table>
 
