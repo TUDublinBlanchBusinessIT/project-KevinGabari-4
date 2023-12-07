@@ -4,6 +4,7 @@
 include("dbcon.php");
 
 $sql = "select * from employee";
+$result =mysqli_query($con,$sql);
 
 $result = mysqli_query($con, $sql);
 while(mysqli_fetch_assoc($result)) {
