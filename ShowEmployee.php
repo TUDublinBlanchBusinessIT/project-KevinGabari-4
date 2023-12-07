@@ -7,7 +7,7 @@ $sql = "select * from employee";
 $result =mysqli_query($con,$sql);
 
 $result = mysqli_query($con, $sql);
-while(mysqli_fetch_assoc($result)) {
+while($row = mysqli_fetch_assoc($result)) {
  $fn = $row['firstname'];
  $sn = $row['surname'];
  $dob = $row['dateofbirth'];
